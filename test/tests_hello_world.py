@@ -16,7 +16,5 @@ from hello_world import hello_worldx
 class TestHelloWorld:
     def test_hello_world(self):
        val = hello_worldx()
-       assert("Hello World" not in val)
-       assert(False)
-       assert(True)
+       assert("Hello World" in val)
            
