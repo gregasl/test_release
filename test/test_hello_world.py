@@ -1,11 +1,11 @@
-import os
-import sys
-import pytest
+# import os
+# import sys
+# import pytest
 
-module_directory = r"U:\release_test\test_release"
-# module_directory = r".."
-print(f"module directory {module_directory}")
-sys.path.insert(0, module_directory)
+# module_directory = r"U:\release_test\test_release"
+# # module_directory = r".."
+# print(f"module directory {module_directory}")
+# sys.path.insert(0, module_directory)
 
 #from ASL.utils.cusip import Cusip
 from hello_world import hello_worldx
