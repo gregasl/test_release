@@ -9,6 +9,8 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  PYTHONPATH: //aslfile01/aslcap/IT/software/Production/python
 jobs:
   build:
 
@@ -26,6 +28,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
+        ls -ltr //aslfile01/aslcap/IT/software/Production/python
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
